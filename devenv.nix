@@ -111,6 +111,13 @@ in
         enable = true;
         # keep-sorted end
       };
+      dx-fmt = {
+        # keep-sorted start block=yes prefix_order=enable
+        enable = true;
+        entry = "dx fmt --check";
+        pass_filenames = false;
+        # keep-sorted end
+      };
       end-of-file-fixer = {
         # keep-sorted start block=yes prefix_order=enable
         enable = true;
