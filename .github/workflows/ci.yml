@@ -68,8 +68,8 @@ jobs:
       - name: Build fullstack app
         run: dx build --locked --package web --platform web
 
-      - name: Test
+      - name: Run Rust tests
         run: cargo test --locked --package api --package ui --all-features
 
       - name: Run clippy
-        run: cargo clippy --locked --workspace --exclude desktop --exclude mobile --all-targets --all-features -- -D warnings
+        run: cargo clippy --locked --exclude desktop --exclude mobile --all-targets --all-features -- -D warnings
